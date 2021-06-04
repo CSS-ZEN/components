@@ -1,0 +1,21 @@
+---
+description: 'A React Hook to read/write clipboard.'
+labels: ['hook', 'clipboard']
+---
+
+import useClipboard from './useclipboard';
+
+## A React Hook to read/write clipboard
+
+If `navigator.clipboard` is not supported, it uses a partial-functional fallback implmented with textarea.
+
+### Component usage
+
+```js
+import useClipboard from './useclipboard'
+
+const [clipboard, setClipboard] = useClipboard()
+
+<h1>The clipboard is: {clipboard}</h1>
+<button onClick={() => setClipboard('Copy me!')}>Copy me!</button>
+```
