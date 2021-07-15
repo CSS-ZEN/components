@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  "teambit.workspace/workspace": {
+    "name": "csszen",
+    "icon": "https://avatars.githubusercontent.com/u/82625684",
+    "defaultDirectory": "{scope}/{name}",
+    "defaultScope": "csszen.components"
+  },
+  "teambit.dependencies/dependency-resolver": {
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@primer/css": "17.3.0",
+        "@somarlyonks/bem": "1.0.1",
+        "@somarlyonks/markdown": "1.0.0",
+        "@testing-library/react": "12.0.0",
+        "@testing-library/react-hooks": "7.0.1",
+        "typescript": "4.3.5"
+      },
+      "peerDependencies": {
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts",
+      "**/*.composition.tsx"
+    ],
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
+  },
+  "teambit.workspace/variants": {
+    "*": {
+      "teambit.react/react": {},
+      "teambit.pkg/pkg": {}
+    },
+    "hooks": {
+      "defaultScope": "csszen.hooks"
+    }
+  }
+}
