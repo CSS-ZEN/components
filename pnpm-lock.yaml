@@ -8,7 +8,6 @@ importers:
       core-js: registry.npmjs.org/core-js/3.15.2
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-      sass: registry.npmjs.org/sass/1.32.8
       typescript: registry.npmjs.org/typescript/4.3.5
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -35,7 +34,6 @@ importers:
       core-js: ^3.15.2
       react: ^16.14.0
       react-dom: ^16.14.0
-      sass: 1.32.8
       typescript: 4.3.5
   components/markdown:
     specifiers: {}
@@ -491,19 +489,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/ansi-styles/-/ansi-styles-5.2.0.tgz
     version: 5.2.0
-  registry.npmjs.org/anymatch/3.1.2:
-    dependencies:
-      normalize-path: registry.npmjs.org/normalize-path/3.0.0
-      picomatch: registry.npmjs.org/picomatch/2.3.0
-    dev: false
-    engines:
-      node: '>= 8'
-    name: anymatch
-    resolution:
-      integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/anymatch/-/anymatch-3.1.2.tgz
-    version: 3.1.2
   registry.npmjs.org/argparse/1.0.10:
     dependencies:
       sprintf-js: registry.npmjs.org/sprintf-js/1.0.3
@@ -543,16 +528,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz
     version: 1.0.2
-  registry.npmjs.org/binary-extensions/2.2.0:
-    dev: false
-    engines:
-      node: '>=8'
-    name: binary-extensions
-    resolution:
-      integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz
-    version: 2.2.0
   registry.npmjs.org/brace-expansion/1.1.11:
     dependencies:
       balanced-match: registry.npmjs.org/balanced-match/1.0.2
@@ -564,18 +539,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz
     version: 1.1.11
-  registry.npmjs.org/braces/3.0.2:
-    dependencies:
-      fill-range: registry.npmjs.org/fill-range/7.0.1
-    dev: false
-    engines:
-      node: '>=8'
-    name: braces
-    resolution:
-      integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/braces/-/braces-3.0.2.tgz
-    version: 3.0.2
   registry.npmjs.org/builtin-modules/1.1.1:
     dev: false
     engines:
@@ -652,26 +615,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/character-reference-invalid/-/character-reference-invalid-1.1.4.tgz
     version: 1.1.4
-  registry.npmjs.org/chokidar/3.5.2:
-    dependencies:
-      anymatch: registry.npmjs.org/anymatch/3.1.2
-      braces: registry.npmjs.org/braces/3.0.2
-      glob-parent: registry.npmjs.org/glob-parent/5.1.2
-      is-binary-path: registry.npmjs.org/is-binary-path/2.1.0
-      is-glob: registry.npmjs.org/is-glob/4.0.1
-      normalize-path: registry.npmjs.org/normalize-path/3.0.0
-      readdirp: registry.npmjs.org/readdirp/3.6.0
-    dev: false
-    engines:
-      node: '>= 8.10.0'
-    name: chokidar
-    optionalDependencies:
-      fsevents: registry.npmjs.org/fsevents/2.3.2
-    resolution:
-      integrity: sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/chokidar/-/chokidar-3.5.2.tgz
-    version: 3.5.2
   registry.npmjs.org/color-convert/1.9.3:
     dependencies:
       color-name: registry.npmjs.org/color-name/1.1.3
@@ -831,18 +774,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/extend/-/extend-3.0.2.tgz
     version: 3.0.2
-  registry.npmjs.org/fill-range/7.0.1:
-    dependencies:
-      to-regex-range: registry.npmjs.org/to-regex-range/5.0.1
-    dev: false
-    engines:
-      node: '>=8'
-    name: fill-range
-    resolution:
-      integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz
-    version: 7.0.1
   registry.npmjs.org/fs.realpath/1.0.0:
     dev: false
     name: fs.realpath
@@ -851,19 +782,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
     version: 1.0.0
-  registry.npmjs.org/fsevents/2.3.2:
-    dev: false
-    engines:
-      node: ^8.16.0 || ^10.6.0 || >=11.0.0
-    name: fsevents
-    optional: true
-    os:
-      - darwin
-    resolution:
-      integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz
-    version: 2.3.2
   registry.npmjs.org/function-bind/1.1.1:
     dev: false
     name: function-bind
@@ -872,18 +790,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz
     version: 1.1.1
-  registry.npmjs.org/glob-parent/5.1.2:
-    dependencies:
-      is-glob: registry.npmjs.org/is-glob/4.0.1
-    dev: false
-    engines:
-      node: '>= 6'
-    name: glob-parent
-    resolution:
-      integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz
-    version: 5.1.2
   registry.npmjs.org/glob/7.1.7:
     dependencies:
       fs.realpath: registry.npmjs.org/fs.realpath/1.0.0
@@ -1106,18 +1012,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/is-alphanumerical/-/is-alphanumerical-1.0.4.tgz
     version: 1.0.4
-  registry.npmjs.org/is-binary-path/2.1.0:
-    dependencies:
-      binary-extensions: registry.npmjs.org/binary-extensions/2.2.0
-    dev: false
-    engines:
-      node: '>=8'
-    name: is-binary-path
-    resolution:
-      integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz
-    version: 2.1.0
   registry.npmjs.org/is-buffer/2.0.5:
     dev: false
     engines:
@@ -1146,28 +1040,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/is-decimal/-/is-decimal-1.0.4.tgz
     version: 1.0.4
-  registry.npmjs.org/is-extglob/2.1.1:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    name: is-extglob
-    resolution:
-      integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz
-    version: 2.1.1
-  registry.npmjs.org/is-glob/4.0.1:
-    dependencies:
-      is-extglob: registry.npmjs.org/is-extglob/2.1.1
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    name: is-glob
-    resolution:
-      integrity: sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/is-glob/-/is-glob-4.0.1.tgz
-    version: 4.0.1
   registry.npmjs.org/is-hexadecimal/1.0.4:
     dev: false
     name: is-hexadecimal
@@ -1176,16 +1048,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz
     version: 1.0.4
-  registry.npmjs.org/is-number/7.0.0:
-    dev: false
-    engines:
-      node: '>=0.12.0'
-    name: is-number
-    resolution:
-      integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz
-    version: 7.0.0
   registry.npmjs.org/is-plain-obj/2.1.0:
     dev: false
     engines:
@@ -1411,16 +1273,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
     version: 2.1.2
-  registry.npmjs.org/normalize-path/3.0.0:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    name: normalize-path
-    resolution:
-      integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz
-    version: 3.0.0
   registry.npmjs.org/object-assign/4.1.1:
     dev: false
     engines:
@@ -1492,16 +1344,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz
     version: 1.0.7
-  registry.npmjs.org/picomatch/2.3.0:
-    dev: false
-    engines:
-      node: '>=8.6'
-    name: picomatch
-    resolution:
-      integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz
-    version: 2.3.0
   registry.npmjs.org/pretty-format/26.6.2:
     dependencies:
       '@jest/types': registry.npmjs.org/@jest/types/26.6.2
@@ -1618,18 +1460,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react/-/react-16.14.0.tgz
     version: 16.14.0
-  registry.npmjs.org/readdirp/3.6.0:
-    dependencies:
-      picomatch: registry.npmjs.org/picomatch/2.3.0
-    dev: false
-    engines:
-      node: '>=8.10.0'
-    name: readdirp
-    resolution:
-      integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz
-    version: 3.6.0
   registry.npmjs.org/regenerator-runtime/0.13.7:
     dev: true
     name: regenerator-runtime
@@ -1709,19 +1539,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/resolve/-/resolve-1.20.0.tgz
     version: 1.20.0
-  registry.npmjs.org/sass/1.32.8:
-    dependencies:
-      chokidar: registry.npmjs.org/chokidar/3.5.2
-    dev: false
-    engines:
-      node: '>=8.9.0'
-    hasBin: true
-    name: sass
-    resolution:
-      integrity: sha512-Sl6mIeGpzjIUZqvKnKETfMf0iDAswD9TNlv13A7aAF3XZlRPMq4VvJWBC2N2DXbp94MQVdNSFG6LfF/iOXrPHQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/sass/-/sass-1.32.8.tgz
-    version: 1.32.8
   registry.npmjs.org/scheduler/0.19.1:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
@@ -1815,18 +1632,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz
     version: 7.2.0
-  registry.npmjs.org/to-regex-range/5.0.1:
-    dependencies:
-      is-number: registry.npmjs.org/is-number/7.0.0
-    dev: false
-    engines:
-      node: '>=8.0'
-    name: to-regex-range
-    resolution:
-      integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz
-    version: 5.0.1
   registry.npmjs.org/trough/1.0.5:
     dev: false
     name: trough
