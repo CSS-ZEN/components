@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "bootstrap": "npm i -g @teambit/bvm && bit install",
+    "bootstrap": "npm i -g @teambit/bvm && bvm install && bit install",
     "start": "bit start"
   },
   "devDependencies": {
