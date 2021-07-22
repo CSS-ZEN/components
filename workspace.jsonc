@@ -25,7 +25,7 @@
     "packageManagerArgs": [],
     "devFilePatterns": [
       "**/*.spec.ts",
-      "**/*.composition.tsx"
+      "**/*.composition.*"
     ],
     "strictPeerDependencies": true,
     "installFromBitDevRegistry": true,

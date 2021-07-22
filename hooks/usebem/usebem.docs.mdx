@@ -1,0 +1,33 @@
+---
+description: 'A BEM helper hook.'
+labels: ['hook', 'counter']
+---
+
+import {useBem} from './usebem';
+
+## A BEM helper hook.
+
+Used to generate [BEM](http://getbem.com/introduction/) styled classnames.
+
+### Component usage
+
+```js
+import {moduledBem} from './usebem'
+import style from './usebem.composition.module.scss'
+
+const useModuledBem = moduledBem(style)
+
+export const ModuledUsebem = () => {
+    const [borderless, setBorderless] = useState(false)
+    const className = useModuledBem('container', '', {borderless})
+
+    const toggleBorderless = () => setBorderless(prev => !prev)
+
+    return (
+        <div className={className}>
+            <h1>classname is "{className}"</h1>
+            <button onClick={toggleBorderless}>{borderless ? 'show' : 'hide'} border</button>
+        </div>
+    )
+}
+```
