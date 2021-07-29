@@ -1,0 +1,72 @@
+---
+description: 'A component for flex layout.'
+labels: ['layout', 'flex']
+---
+
+import Flex from './flexrx';
+
+## A component for flex layout.
+
+Can be used to draft a responsive layout without writing style sheets.
+
+### Component usage
+
+```js
+<Flex className={style.debug} full stretch>
+    <Flex shrink>Shrink</Flex>
+    <Flex grow verticle stretch>
+        <Flex>Grow, Verticle</Flex>
+        <Flex>Grow, Verticle</Flex>
+    </Flex>
+</Flex>
+```
+
+Add this to your global SASS file:
+
+```scss
+@import @csszen/components.flex/flex.scss;
+```
+
+## Shortcut props
+
+There are some boolean props could help a lot like `<Flex verticle />`.
+
+### `verticle`
+
+To change flex direction to `column`.
+
+### `central`
+
+To wrap contents in a container positioned at center of the flex box.
+
+### `grow` / `shrink`
+
+To take more/less space in flex main axis.
+
+### `stretch`
+
+To take all space in flex cross axis.
+
+## Responsive
+
+The layout is **desktop first**, so you have to describe the layout narrow down with prefix in `lg`, `md`, `sm`, `xs` like
+
+```js
+<Flex direction="row" direction-md="column">
+    <Flex>Content</Flex>
+    <Flex>Content</Flex>
+</Flex>
+```
+
+To customize the breakpoints, insert variables **before** the imported flex component SASS file.
+
+```scss
+$cz-breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+@import @csszen/components.flex/flex.scss;
+```

@@ -1,5 +1,5 @@
 import React from 'react'
-import Flex from './flex'
+import Flex, {IFlexProps} from './flex'
 import './flex.scss'
 import style from './flex.composition.module.scss'
 
@@ -56,12 +56,12 @@ export const CentralAlign = () => (
 
 
 export const FlexOrder = () => {
-    const orders = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].sort(() => Math.random() - 1 / 2)
+    const orders = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].sort(() => Math.random() - 1 / 2) as Array<IFlexProps['order']>
     return (
         <Flex className={style.debug} full stretch>
             <Flex wrap>
                 {Array.from(Array(10)).map((_, i) => (
-                    <Flex key={i} className={style.square} order={orders[i] as ANY} central>
+                    <Flex key={i} className={style.square} order={orders[i]} central>
                         id: {i}<br />
                         order: {orders[i]}
                     </Flex>
