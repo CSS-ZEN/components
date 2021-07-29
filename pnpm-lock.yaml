@@ -6,8 +6,10 @@ importers:
       '@somarlyonks/markdown': registry.npmjs.org/@somarlyonks/markdown/1.0.0
       '@somarlyonks/tslint': registry.npmjs.org/@somarlyonks/tslint/1.0.1_typescript@4.3.5
       core-js: registry.npmjs.org/core-js/3.15.2
+      csstype: registry.npmjs.org/csstype/3.0.8
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
+      tslint: registry.npmjs.org/tslint/6.1.3_typescript@4.3.5
       typescript: registry.npmjs.org/typescript/4.3.5
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
@@ -15,7 +17,7 @@ importers:
       '@testing-library/react-hooks': registry.npmjs.org/@testing-library/react-hooks/7.0.1_react-dom@16.14.0+react@16.14.0
       '@types/jest': registry.npmjs.org/@types/jest/26.0.24
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/17.0.14
+      '@types/react': registry.npmjs.org/@types/react/17.0.15
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.9
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
     specifiers:
@@ -28,14 +30,22 @@ importers:
       '@testing-library/react-hooks': 7.0.1
       '@types/jest': ^26.0.24
       '@types/node': 12.20.4
-      '@types/react': ^17.0.14
+      '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
       '@types/testing-library__jest-dom': 5.9.5
       core-js: ^3.15.2
+      csstype: 3.0.8
       react: ^16.14.0
       react-dom: ^16.14.0
+      tslint: ^6.1.3
       typescript: 4.3.5
+  components/flex:
+    specifiers: {}
+  components/flexrx:
+    specifiers: {}
   components/markdown:
+    specifiers: {}
+  hooks/usebem:
     specifiers: {}
   hooks/useclipboard:
     specifiers: {}
@@ -362,7 +372,7 @@ packages:
     version: 15.7.4
   registry.npmjs.org/@types/react-dom/17.0.9:
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.14
+      '@types/react': registry.npmjs.org/@types/react/17.0.15
     dev: true
     name: '@types/react-dom'
     resolution:
@@ -392,6 +402,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/react/-/react-17.0.14.tgz
     version: 17.0.14
+  registry.npmjs.org/@types/react/17.0.15:
+    dependencies:
+      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.4
+      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.2
+      csstype: registry.npmjs.org/csstype/3.0.8
+    dev: true
+    name: '@types/react'
+    resolution:
+      integrity: sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.15.tgz
+    version: 17.0.15
   registry.npmjs.org/@types/scheduler/0.16.2:
     dev: true
     name: '@types/scheduler'
@@ -694,7 +716,6 @@ packages:
       tarball: https://registry.npmjs.org/core-js/-/core-js-3.15.2.tgz
     version: 3.15.2
   registry.npmjs.org/csstype/3.0.8:
-    dev: true
     name: csstype
     resolution:
       integrity: sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
@@ -1022,16 +1043,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/is-buffer/-/is-buffer-2.0.5.tgz
     version: 2.0.5
-  registry.npmjs.org/is-core-module/2.4.0:
+  registry.npmjs.org/is-core-module/2.5.0:
     dependencies:
       has: registry.npmjs.org/has/1.0.3
     dev: false
     name: is-core-module
     resolution:
-      integrity: sha512-6A2fkfq1rfeQZjxrZJGerpLCTHRNEBiSgnu0+obeJpEPZRUooHgsizvzv0ZjJwOz3iWIHdJtVWJ/tmPr3D21/A==
+      integrity: sha512-TXCMSDsEHMEEZ6eCA8rwRDbLu55MRGmrctljsBX/2v1d9/GzqHOxW5c5oPSgrUt2vBFXebu9rGqckXGPWOlYpg==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/is-core-module/-/is-core-module-2.4.0.tgz
-    version: 2.4.0
+      tarball: https://registry.npmjs.org/is-core-module/-/is-core-module-2.5.0.tgz
+    version: 2.5.0
   registry.npmjs.org/is-decimal/1.0.4:
     dev: false
     name: is-decimal
@@ -1530,7 +1551,7 @@ packages:
     version: 1.6.1
   registry.npmjs.org/resolve/1.20.0:
     dependencies:
-      is-core-module: registry.npmjs.org/is-core-module/2.4.0
+      is-core-module: registry.npmjs.org/is-core-module/2.5.0
       path-parse: registry.npmjs.org/path-parse/1.0.7
     dev: false
     name: resolve

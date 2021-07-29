@@ -1,0 +1,48 @@
+---
+description: 'A component for flex layout.'
+labels: ['layout', 'flex']
+---
+
+import Flex from './flex';
+
+## A component for flex layout.
+
+Can be used to draft a responsive layout without writing style sheets.
+
+### Component usage
+
+```js
+<Flex className={style.debug} full stretch>
+    <Flex shrink>Shrink</Flex>
+    <Flex grow verticle stretch>
+        <Flex>Grow, Verticle</Flex>
+        <Flex>Grow, Verticle</Flex>
+    </Flex>
+</Flex>
+```
+
+Add this to your global SASS file:
+
+```scss
+@import @csszen/components.flex/flex.scss;
+```
+
+## Shortcut props
+
+There are some boolean props could help a lot like `<Flex verticle />`.
+
+### `verticle`
+
+To change flex direction to `column`.
+
+### `central`
+
+To wrap contents in a container positioned at center of the flex box.
+
+### `grow` / `shrink`
+
+To take more/less space in flex main axis.
+
+### `stretch`
+
+To take all space in flex cross axis.

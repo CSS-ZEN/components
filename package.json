@@ -7,6 +7,7 @@
     "start": "bit start"
   },
   "devDependencies": {
-    "@somarlyonks/tslint": "^1.0.1"
+    "@somarlyonks/tslint": "^1.0.1",
+    "tslint": "^6.1.3"
   }
 }

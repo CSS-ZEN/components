@@ -1,0 +1,6 @@
+.container {
+  border: 3px solid red;
+  &--borderless {
+    border: none;
+  }
+}

@@ -1,0 +1,30 @@
+.debug {
+  margin: 10px;
+  padding: 10px;
+  * {
+    outline: 1px dashed currentColor;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.15);
+    * {
+      background-color: rgba(0, 255, 0, 0.15);
+      * {
+        background-color: rgba(255, 255, 0, 0.15);
+        * {
+          background-color: rgba(255, 0, 255, 0.15);
+          * {
+            background-color: rgba(0, 255, 255, 0.15);
+            * {
+              background-color: rgba(0, 0, 255, 0.15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
