@@ -7,6 +7,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/flex"
     },
+    "flexmini": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/flexmini"
+    },
     "flexrx": {
         "scope": "csszen.components",
         "version": "0.1.0",

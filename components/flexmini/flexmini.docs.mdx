@@ -1,0 +1,28 @@
+---
+description: 'A component for flex layout.'
+labels: ['layout', 'flex']
+---
+
+import Flex from './flexmini';
+
+## A component for flex layout.
+
+Can be used to draft a responsive layout without writing style sheets.
+
+### Component usage
+
+```js
+<Flex className={style.debug} full>
+    <Flex shrink>Shrink</Flex>
+    <Flex grow verticle>
+        <Flex>Grow, Verticle</Flex>
+        <Flex>Grow, Verticle</Flex>
+    </Flex>
+</Flex>
+```
+
+Add this to your global SASS file:
+
+```scss
+@import @csszen/components.flex/flex.scss;
+```
