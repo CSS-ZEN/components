@@ -25,6 +25,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/flexrx"
     },
+    "fof": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/fof"
+    },
     "markdown": {
         "scope": "csszen.components",
         "version": "0.1.4",
