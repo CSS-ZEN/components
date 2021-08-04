@@ -31,6 +31,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/markdown"
     },
+    "quote": {
+        "scope": "csszen.components",
+        "version": "0.1.1",
+        "mainFile": "index.ts",
+        "rootDir": "components/quote"
+    },
     "usebem": {
         "scope": "csszen.hooks",
         "version": "0.1.1",
