@@ -1,0 +1,45 @@
+---
+description: 'A Quote component.'
+labels: ['quote']
+---
+
+import Quote from './quote';
+
+## React Component for rendering text
+
+A basic div that renders some text
+
+You may add this to your global SASS file:
+
+```scss
+@import @csszen/components.quote/quote.scss;
+```
+
+or style it manually like
+
+```scss
+span {
+  q + span {
+    &::before {
+      content: " - ";
+    }
+    & + cite {
+      &::before {
+        content: " ";
+      }
+    }
+  }
+}
+```
+
+### Component usage
+```js
+<Quote text="hello from Quote" />
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+```js live
+<Quote text="hello from Quote" />
+```

@@ -1,0 +1,12 @@
+span {
+  q + span {
+    &::before {
+      content: " - ";
+    }
+    & + cite {
+      &::before {
+        content: " ";
+      }
+    }
+  }
+}
