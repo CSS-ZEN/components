@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import Flex from '@csszen/components.flexmini'
 import {moduledBem} from '@csszen/hooks.usebem'
 import styles from './button.module.scss'
@@ -19,8 +19,7 @@ export interface IButtonProps {
     onClick?: JSX.IntrinsicElements['button']['onClick']
 }
 
-
-export default function Button ({
+export default forwardRef<HTMLButtonElement, IButtonProps>(({
     type = 'button',
     name,
     label,
@@ -31,18 +30,17 @@ export default function Button ({
     onClick,
     primary = false,
     borderless = false,
-}: IButtonProps) {
-    return (
-        <button
-            type={type}
-            name={name}
-            className={useBem('button', '', {primary, borderless}) + ` ${className}`}
-            disabled={disabled || loading}
-            onClick={onClick}
-        >
-            <Flex>
-                <span className={styles.button__label + ' ' + labelClassName}>{label}</span>
-            </Flex>
-        </button>
-    )
-}
+}, ref) => (
+    <button
+        ref={ref}
+        type={type}
+        name={name}
+        className={useBem('button', '', {primary, borderless}) + ` ${className}`}
+        disabled={disabled || loading}
+        onClick={onClick}
+    >
+        <Flex>
+            <span className={styles.button__label + ' ' + labelClassName}>{label}</span>
+        </Flex>
+    </button>
+))
