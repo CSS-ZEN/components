@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
 import Flex from '@csszen/components.flexmini'
 import Button from '@csszen/components.button'
@@ -9,15 +9,17 @@ import styles from './fof.module.scss'
 
 
 export interface IFOFProps {
+    link?: ReactNode
+    head?: ReactNode
     Link?: <T extends {href: string}>(props: T) => JSX.Element
     Head?: <T extends {title: string}>(props: T) => JSX.Element
 }
 
-export default function FOF ({Head, Link}: IFOFProps) {
+export default function FOF ({head, link, Head, Link}: IFOFProps) {
 
     return (
         <Flex className={styles['f0f-container']} full central>
-            {Head && <Head title="Content Not Found" />}
+            {head || Head && <Head title="Content Not Found" />}
 
             <Flex className={styles['f0f-container__404']}>
                 <hgroup data-word="404">404<Flex className={styles['f0f-container__noise']} /></hgroup>
@@ -26,10 +28,7 @@ export default function FOF ({Head, Link}: IFOFProps) {
             <Flex>
                 <Button borderless label="Back" onClick={navigateBack} />
                 <span>/</span>
-                {Link
-                    ? <Link href="/"><Button borderless label="Home" /></Link>
-                    : <a href="/"><Button borderless label="Home" /></a>
-                }
+                {link || (Link ? <Link href="/"><Button borderless label="Home" /></Link> : <a href="/"><Button borderless label="Home" /></a>)}
             </Flex>
         </Flex>
     )
