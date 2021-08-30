@@ -43,6 +43,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/quote"
     },
+    "thematicbreak": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/thematicbreak"
+    },
     "usebem": {
         "scope": "csszen.hooks",
         "version": "0.1.1",
