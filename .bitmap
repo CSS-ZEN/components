@@ -7,6 +7,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/button"
     },
+    "copy": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/copy"
+    },
     "flex": {
         "scope": "csszen.components",
         "version": "0.1.0",
@@ -31,17 +37,41 @@
         "mainFile": "index.ts",
         "rootDir": "components/fof"
     },
+    "github": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/github"
+    },
     "markdown": {
         "scope": "csszen.components",
         "version": "0.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/markdown"
     },
+    "octiconcheck": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconcheck"
+    },
+    "octiconclippy": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconclippy"
+    },
     "quote": {
         "scope": "csszen.components",
         "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "components/quote"
+    },
+    "thematicbreak": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/thematicbreak"
     },
     "usebem": {
         "scope": "csszen.hooks",

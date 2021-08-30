@@ -39,6 +39,9 @@
     },
     "hooks": {
       "defaultScope": "csszen.hooks"
+    },
+    "icons": {
+      "defaultScope": "csszen.icons"
     }
   }
 }
