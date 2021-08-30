@@ -7,6 +7,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/button"
     },
+    "copy": {
+        "scope": "csszen.components",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "components/copy"
+    },
     "flex": {
         "scope": "csszen.components",
         "version": "0.1.0",
