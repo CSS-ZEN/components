@@ -31,6 +31,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/fof"
     },
+    "github": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/github"
+    },
     "markdown": {
         "scope": "csszen.components",
         "version": "0.1.4",
