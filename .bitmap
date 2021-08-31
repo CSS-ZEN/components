@@ -9,7 +9,7 @@
     },
     "copy": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "components/copy"
     },
@@ -57,7 +57,7 @@
     },
     "octiconclippy": {
         "scope": "csszen.icons",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "icons/octiconclippy"
     },
