@@ -69,7 +69,7 @@
     },
     "octiconupload": {
         "scope": "csszen.icons",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "icons/octiconupload"
     },
