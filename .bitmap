@@ -61,6 +61,12 @@
         "mainFile": "index.ts",
         "rootDir": "icons/octiconclippy"
     },
+    "octiconlink": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconlink"
+    },
     "octiconupload": {
         "scope": "csszen.icons",
         "version": "1.0.0",
