@@ -67,6 +67,12 @@
         "mainFile": "index.ts",
         "rootDir": "icons/octiconlink"
     },
+    "octiconrss": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconrss"
+    },
     "octiconupload": {
         "scope": "csszen.icons",
         "version": "1.0.1",
