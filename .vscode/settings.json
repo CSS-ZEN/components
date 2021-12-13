@@ -6,6 +6,10 @@
   "search.exclude": {
     "public/bit": true
   },
+  "files.associations": {
+    ".bitmap": "jsonc",
+    "tslint.json": "jsonc",
+  },
   "typescript.tsc.autoDetect": "off",
   "javascript.format.enable": true,
   "typescript.format.enable": true,

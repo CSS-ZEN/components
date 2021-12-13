@@ -9,13 +9,13 @@
     },
     "copy": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "components/copy"
     },
     "flex": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "mainFile": "index.ts",
         "rootDir": "components/flex"
     },
@@ -27,7 +27,7 @@
     },
     "flexrx": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "mainFile": "index.ts",
         "rootDir": "components/flexrx"
     },
@@ -57,9 +57,27 @@
     },
     "octiconclippy": {
         "scope": "csszen.icons",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "icons/octiconclippy"
+    },
+    "octiconlink": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconlink"
+    },
+    "octiconrss": {
+        "scope": "csszen.icons",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconrss"
+    },
+    "octiconupload": {
+        "scope": "csszen.icons",
+        "version": "1.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "icons/octiconupload"
     },
     "quote": {
         "scope": "csszen.components",
@@ -84,6 +102,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "hooks/useclipboard"
+    },
+    "useintersectionobserver": {
+        "scope": "csszen.hooks",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "hooks/useintersectionobserver"
     },
     "$schema-version": "14.9.0"
 }

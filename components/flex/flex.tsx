@@ -1,4 +1,4 @@
-import React, {ReactNode, HTMLAttributes} from 'react'
+import React, {ReactNode, HTMLAttributes, forwardRef} from 'react'
 import {useBem} from '@csszen/hooks.usebem'
 import type {Property, Globals} from 'csstype'
 
@@ -34,7 +34,7 @@ export interface IFlexProps extends HTMLAttributes<HTMLDivElement> {
     order?: Order
 }
 
-export default function Flex (props: IFlexProps) {
+export default forwardRef<HTMLDivElement, IFlexProps>(function Flex (props, ref) {
     const {central, ...rawProps} = props
 
     const defaultProps: Pick<IFlexProps, 'alignItems' | 'justifyContent' | 'alignContent'> = {
@@ -87,7 +87,7 @@ export default function Flex (props: IFlexProps) {
     ]) + ` ${propClassName}`
 
     if (central) return (
-        <div {...extraProps} className={className}>
+        <div {...extraProps} className={className} ref={ref}>
             <div className="cz-flex-container">
                 {children}
             </div>
@@ -99,4 +99,4 @@ export default function Flex (props: IFlexProps) {
             {children}
         </div>
     )
-}
+})

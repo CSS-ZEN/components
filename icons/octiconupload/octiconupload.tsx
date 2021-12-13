@@ -26,11 +26,11 @@ export interface IProps {
     className?: string
 }
 
-export default function OcticonClippy ({className = ''}: IProps) {
+export default function OcticonUpload ({className = ''}: IProps) {
     return (
-        <svg className={`octicon octicon-clippy ${className}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <svg className={`octicon octicon-upload ${className}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
             <path
-                d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"
+                d="M8.53 1.22a.75.75 0 00-1.06 0L3.72 4.97a.75.75 0 001.06 1.06l2.47-2.47v6.69a.75.75 0 001.5 0V3.56l2.47 2.47a.75.75 0 101.06-1.06L8.53 1.22zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"
                 fillRule="evenodd"
             />
         </svg>

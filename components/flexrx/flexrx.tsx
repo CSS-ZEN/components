@@ -1,4 +1,4 @@
-import React, {ReactNode, HTMLAttributes} from 'react'
+import React, {ReactNode, HTMLAttributes, forwardRef} from 'react'
 import {useBem} from '@csszen/hooks.usebem'
 import type {Property, Globals} from 'csstype'
 
@@ -80,7 +80,7 @@ export interface IFlexProps extends HTMLAttributes<HTMLDivElement> {
     'order-lg'?: Order
 }
 
-export default function FlexRx (props: IFlexProps) {
+export default forwardRef<HTMLDivElement, IFlexProps>(function FlexRx (props, ref) {
     const {central, ...rawProps} = props
 
     const defaultProps: Pick<IFlexProps, 'alignItems' | 'justifyContent' | 'alignContent'> = {
@@ -196,8 +196,8 @@ export default function FlexRx (props: IFlexProps) {
     )
 
     return (
-        <div {...extraProps} className={className}>
+        <div {...extraProps} className={className} ref={ref}>
             {children}
         </div>
     )
-}
+})
