@@ -15,7 +15,7 @@
     },
     "flex": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "mainFile": "index.ts",
         "rootDir": "components/flex"
     },
@@ -27,7 +27,7 @@
     },
     "flexrx": {
         "scope": "csszen.components",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "mainFile": "index.ts",
         "rootDir": "components/flexrx"
     },
