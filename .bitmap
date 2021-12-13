@@ -103,5 +103,11 @@
         "mainFile": "index.ts",
         "rootDir": "hooks/useclipboard"
     },
+    "useintersectionobserver": {
+        "scope": "csszen.hooks",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "hooks/useintersectionobserver"
+    },
     "$schema-version": "14.9.0"
 }
